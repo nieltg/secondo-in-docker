@@ -1,0 +1,25 @@
+From e91df0181fe7aef0f5afcd7903ad69d6347b7ce3 Mon Sep 17 00:00:00 2001
+From: Daniel <nieltansah@gmail.com>
+Date: Tue, 27 Nov 2018 11:08:52 +0000
+Subject: [PATCH] Remove unknown characters in Java source code
+
+---
+ Javagui/viewer/hoese/algebras/fixedmregion/FMSeg.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Javagui/viewer/hoese/algebras/fixedmregion/FMSeg.java b/Javagui/viewer/hoese/algebras/fixedmregion/FMSeg.java
+index 39de10d..4f57ef6 100644
+--- a/Javagui/viewer/hoese/algebras/fixedmregion/FMSeg.java
++++ b/Javagui/viewer/hoese/algebras/fixedmregion/FMSeg.java
+@@ -151,7 +151,7 @@ public class FMSeg {
+      * @return string representation of FMSeg
+      */
+     public String toString() {
+-        return " ( " + getI() + " => " + v.toString() + "@" + rotate * 360 / (2 * Math.PI) + "° ) ";
++        return " ( " + getI() + " => " + v.toString() + "@" + rotate * 360 / (2 * Math.PI) + " ) ";
+     }
+ 
+     /**
+-- 
+2.7.4
+
