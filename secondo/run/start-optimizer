@@ -1,0 +1,6 @@
+#!/bin/bash
+
+source common.bash
+
+cd secondo/Optimizer
+exec ./StartOptServer
