@@ -27,7 +27,7 @@ RUN bash -c "md5sum -c secondo-v412-LAT1.tgz.md5sum \
 FROM ubuntu:xenial
 
 RUN apt-get -y update \
-  && apt-get -y install libgsl2 libgmp10 libxml2 librecode0 libjpeg62 \
+  && apt-get -y install libgsl2 libgmp10 libxml2 librecode0 libjpeg62 netcat \
     libdb5.3++ openjdk-8-jre-headless swi-prolog-nox swi-prolog-java crudini
 
 RUN groupadd -g 1000 secondo \
