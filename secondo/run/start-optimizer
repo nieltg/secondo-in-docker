@@ -3,4 +3,4 @@
 source common.bash
 
 cd secondo/Optimizer
-exec ./StartOptServer
+exec ./StartOptServer < <(bash -c 'coproc { exec >&-; read; }; wait')
