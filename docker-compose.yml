@@ -6,7 +6,7 @@ services:
     ports:
       - 1234:1234
     volumes:
-      - "secondo_data:/home/secondo/secondo_data"
+      - "secondo_data:/home/secondo/secondo-databases"
     healthcheck:
       test: ["CMD", "nc", "-z", "localhost", "1234"]
       interval: 30s
