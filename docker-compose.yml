@@ -24,6 +24,12 @@ services:
       - SECONDO_PORT=1234
     ports:
       - 1235:1235
+    healthcheck:
+      test: ["CMD", "nc", "-z", "localhost", "1235"]
+      interval: 30s
+      timeout: 5s
+      retries: 10
+      start_period: 5s
 
 volumes:
   secondo_data:
