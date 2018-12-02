@@ -36,7 +36,7 @@ RUN groupadd -g 1000 secondo \
 USER secondo
 WORKDIR /home/secondo
 
-RUN mkdir -p secondo/Optimizer secondo/bin
+RUN mkdir -p secondo/Optimizer secondo/bin secondo-databases
 
 COPY --chown=secondo:secondo run/ .
 
