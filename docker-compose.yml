@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   kernel:
-    build: secondo
+    build: .
     image: nieltg/secondo:v412-LAT1
     ports:
       - 1234:1234
@@ -16,7 +16,7 @@ services:
     #   start_period: 5s
 
   optimizer:
-    build: secondo
+    build: .
     image: nieltg/secondo:v412-LAT1
     command: ["./start-optimizer"]
     depends_on:
