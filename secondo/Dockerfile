@@ -45,4 +45,4 @@ COPY --chown=secondo:secondo --from=build /home/secondo/secondo/bin secondo/bin/
 COPY --chown=secondo:secondo --from=build \
   /home/secondo/secondo/Optimizer secondo/Optimizer/
 
-CMD ./start-kernel
+CMD ["./start-kernel"]
