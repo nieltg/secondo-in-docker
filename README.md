@@ -53,7 +53,7 @@ Secondo supports two types of queries: SQL-like queries and Secondo application 
 Get the trajectory line of the `Trains`' `Trip` using SQL-like query. Ensure that the optimizer is working before executing this query.
 
 ```
-select trajectory(Trip) from Trains
+select trajectory(Trip) as TripLine from Trains
 ```
 
 #### `Trains`' `Trip` Covered in Snow
