@@ -50,6 +50,8 @@ Secondo supports two types of queries: SQL-like queries and Secondo application 
 
 #### Trajectory of `Trains`' `Trip`
 
+![Screenshot of 1st Query](doc/q-1-shot.png)
+
 Get the trajectory line of the `Trains`' `Trip` using SQL-like query. Ensure that the optimizer is working before executing this query.
 
 ```
@@ -57,6 +59,8 @@ select trajectory(Trip) as TripLine from Trains
 ```
 
 #### `Trains`' `Trip` Covered in Snow
+
+![Screencast of 2nd Query](doc/q-2-cast.gif)
 
 Get part of `Trains`' `Trip` which has been covered in snow. A train has been covered in snow or not is known whether the train has passed the `msnow` area, which is a moving area represents snowing areas at time, or not.
 
@@ -72,6 +76,8 @@ query Trains
 ```
 
 #### `Trains`' `Trip` in Radius of Cinemas
+
+![Screencast of 3rd Query](doc/q-3-cast.gif)
 
 Get part of `Trains`' `Trip` which is in specified radius of `Kinos` using two queries: find out the area around the cinema in the specified radius, then find out `Trains`' `Trip` inside the area from the previous query.
 
